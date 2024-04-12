@@ -1,17 +1,28 @@
 {
-    "books" : [],
-    "categories" : [
-        {
-            "cod_turma" : 1,
-            "name" : "1°DS"
-        },
-        {
-            "id" : 2,
-            "name" : "2°DS"
-        },
-        {
-            "id" : 3,
-            "name" : "3°DS"
-        }
-    ]
+  "alunos": [
+    {
+      "id": "e230",
+      "Nome do Aluno": [
+        "joao da silva"
+      ],
+      "sala": {
+        "id": "cod_turma",
+        "sala": "2°DS"
+      }
+    }
+  ],
+  "salas": [
+    {
+      "cod_turma": 1,
+      "name": "1°DS"
+    },
+    {
+      "cod_turma": 2,
+      "name": "2°DS"
+    },
+    {
+      "cod_turma": 3,
+      "name": "3°DS"
+    }
+  ]
 }
