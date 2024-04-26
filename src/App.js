@@ -1,8 +1,11 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css';
 
+import Home from './pages/Home';
 import NovoAluno from './pages/NovoAluno';
+import Aluno from './pages/Alunos';
 
+import NavBar from './components/NavBar'
 import Container from './components/Container';
 
 function App() {
@@ -12,7 +15,13 @@ function App() {
 
         <Container>
 
-          <NovoAluno/>
+          <Routes>
+            <Route path="/" element={<NavBar/>}>
+              <Route index element={<Home/>}/>
+              <Route path="Alunos" element={<Aluno/>}/>
+              <Route path="novoAluno" element={<NovoAluno/>}/>
+            </Route>
+          </Routes>
 
         </Container>
 

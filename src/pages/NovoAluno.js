@@ -83,7 +83,7 @@ export default function NovoAluno(){
                 <Input
                     type="text"
                     text="Nome do Aluno"
-                    name="Nome do Aluno"
+                    name="nomeAluno"
                     placeholder="Digite aqui o nome do aluno"
                     handlerOnChange={handlerChangeAluno}
                 />
