@@ -1,10 +1,70 @@
 .alunoItem{
     border: 2px solid #8b8b8b;
-    padding: 1em;
+    padding: 2em;
     border-radius: 3px;
+    margin: 1em
 }
 
 .alunoItem li{
     display: inline;
     margin-right: 10px;
+}
+
+.aluno_button_actions{
+    float: right;
+}
+
+.aluno_button_actions a, 
+.aluno_button_actions button{
+    text-decoration: none;
+    border: none;
+    background-color: #FFF;
+    color: #222;
+    font-size: .9em;
+    padding: .6em 1em;
+    margin-right: 1em;
+    border: 1px solid #222;
+    transition: 3.0s;
+    cursor: pointer;
+}
+
+.aluno_button_actions a:hover, 
+.aluno_button_actions button:hover{
+    background-color: #FF4733;
+    color: #FFF;
+
+    border-radius: 30px;
+    padding: .6em*1.25 1em*1.25;
+
+    animation:rotação 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes rotação {
+    from {filter: #ffff}
+    to {filter: #FF4733}
+
+    from{color: #222;}
+    to{color: #ffffff;}
+
+    0%{
+        transform:translate(-2px, 0px) rotate(0deg)
+    }
+
+    25%{
+        transform:translate(0px, -2px) rotate(0deg)
+    }
+
+    50%{
+        transform:translate(-2px, 0px) rotate(0deg)
+    }
+    
+    75%{
+        transform:translate(0px, -2px) rotate(0deg)
+    }
+
+    100%{
+        transform:translate(-2px, 0px) rotate(0deg)
+    }
 }
